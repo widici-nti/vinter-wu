@@ -1,1 +1,0 @@
-I denna mapp har du eventuella js-filer (inga i detta projekt dock)

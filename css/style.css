@@ -1,5 +1,7 @@
 :root {
-    --color: #ff5733;
+    --base-color: #eff1f5;
+    --mantle-color: #e6e9ef;
+    --accent-color: #ff5733;
 }
 
 body {
@@ -19,7 +21,24 @@ div#wrapper {
 
 div#wrapper header {
     grid-area: hd;
-    background-color: orange
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mantle-color)
+}
+
+div#wrapper header img {
+    height: 100%
+}
+
+div#wrapper header nav {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+div#wrapper header nav a {
+    font-size: 300%;
 }
 
 div#wrapper aside#la {
@@ -40,4 +59,9 @@ div#wrapper aside#ra {
 div#wrapper footer {
     grid-area: ft;
     background-color: blue;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
 }
