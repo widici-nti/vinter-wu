@@ -1,7 +1,10 @@
 :root {
-    --base-color: #292c3c;
+    --base-color: #dce0e8;
     --mantle-color: #e6e9ef;
+    --crust-color: #eff1f5;
     --accent-color: #ff5733;
+    --text-color: #4c4f69;
+    --border-radius: 0.25vw
 }
 
 body {
@@ -22,9 +25,9 @@ div#wrapper {
 header {
     grid-area: hd;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: var(--mantle-color)
+    background-color: var(--crust-color)
 }
 
 header img {
@@ -33,58 +36,82 @@ header img {
 
 header nav {
     display: flex;
-    width: 60%;
     justify-content: space-around;
-}
-
-header nav a {
-    font-size: 300%;
+    width: 60%;
 }
 
 aside#la {
     grid-area: la;
-    background-color: yellow
-}
-
-section {
-    grid-area: sc;
-    margin: 1vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-article {
-    display: flex;
-    margin: 1vw;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
     background-color: var(--mantle-color);
 }
 
-article div#dish-img {
-    width: 75%;
-    height: 30vh;
+section#dishes {
+    grid-area: sc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1vw;
 }
 
-article div#dish-img img[src*="img/dish-"] {
+section#dishes article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1vw;
+    padding: 1vw;
+    width: 25%;
+    height: 40vh;
+    border-radius: var(--border-radius);
+    background-color: var(--mantle-color);
+}
+
+div.dish-img {
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+}
+
+div.dish-img img[src*="img/dish-"] {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+section.dish-stats {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 20%;
+    border-radius: var(--border-radius);
+    background-color: var(--accent-color);
+}
+
 aside#ra {
     grid-area: ra;
-    background-color: aqua;
+    background-color: var(--mantle-color);
 }
 
 footer {
     grid-area: ft;
-    background-color: blue;
+    background-color: var(--crust-color);
 }
 
 a {
     text-decoration: none;
     color: var(--accent-color);
+    font-size: 400%;
+}
+
+p {
+    font-size: larger;
+}
+
+h3 {
+    font-size: x-large;
+}
+
+p,
+h3 {
+    color: var(--text-color);
 }
