@@ -15,20 +15,34 @@ section#employees article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    height: 55vh;
+    margin: var(--default-margin);
+    padding: var(--default-margin);
+    height: auto;
     width: 25%;
     border-radius: var(--default-radius);
     background-color: var(--mantle-color);
+    gap: var(--default-margin);
 }
 
-section#employees article img {
-    height: 100%;
-    border-radius: var(--default-radius);
-}
-
-div.employee-contact {
+section#employees article>* {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+}
+
+section#employees article>*>* {
+    margin: 0;
+}
+
+div.employee-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+div.employee-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--default-radius);
 }
