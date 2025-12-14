@@ -71,7 +71,8 @@ a {
     color: var(--accent-color);
 }
 
-a.page-link {
+a.page-link,
+h2 {
     font-size: 400%;
 }
 

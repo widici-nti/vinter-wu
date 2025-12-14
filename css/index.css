@@ -77,3 +77,8 @@ aside div.ad-img {
     background-image: url("../img/ads/podme.png");
     background-size: contain;
 }
+
+aside,
+h2 {
+    font-size: 150%;
+}
