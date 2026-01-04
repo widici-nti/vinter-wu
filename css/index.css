@@ -62,28 +62,3 @@ aside#la {
 aside#ra {
     grid-area: ra;
 }
-
-aside#la,
-aside#ra {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: var(--base-color);
-}
-
-aside div.ad-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-aside div.ad-img {
-    height: 100%;
-    background-image: url("../img/ads/podme.png");
-    background-size: contain;
-}
-
-aside h2 {
-    font-size: 200%;
-    margin: var(--default-margin);
-}
