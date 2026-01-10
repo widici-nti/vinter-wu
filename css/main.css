@@ -6,7 +6,8 @@
     --mantle-color: #e6e9ef;
     --crust-color: #eff1f5;
     --accent-color: #ff5733;
-    --text-color: black;
+    --primary-text-color: #000000;
+    --secondary-text-color: #020202;
     --default-radius: 0.25vw;
     --default-margin: 1vw;
 }
@@ -122,21 +123,14 @@ figcaption {
     font-size: x-large;
 }
 
-p,
-h1,
-h3,
-h2,
-figcaption {
-    color: var(--text-color);
-}
-
 h1,
 h2,
 h3 {
     font-family: "Roboto", serif;
     font-optical-sizing: auto;
-    font-weight: 550;
+    font-weight: 500;
     font-style: normal;
+    color: var(--primary-text-color);
 }
 
 p,
@@ -146,4 +140,5 @@ figcaption {
     font-weight: 450;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+    color: var(--secondary-text-color);
 }
