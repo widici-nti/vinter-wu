@@ -5,9 +5,15 @@ class SiteHeader extends HTMLElement {
         this.innerHTML = `
             <img src="img/icons/figure.webp" alt="Figure icon">
             <nav>
-                <a class="page-link" href="about.html">About</a>
-                <a class="page-link" href="index.html">Recipes</a>
-                <a class="page-link" href="contact.html">Contact</a>
+                <h1>
+                    <a class="page-link" href="about.html">About</a>
+                </h1>
+                <h1>
+                    <a class="page-link" href="index.html">Recipes</a>
+                </h1>
+                <h1>
+                    <a class="page-link" href="contact.html">Contact</a>
+                </h1>
             </nav>
             <img src="img/icons/hand.webp" alt="Hand icon">
         `;

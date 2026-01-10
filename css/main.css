@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --base-color: #dce0e8;
     --mantle-color: #e6e9ef;
@@ -24,7 +27,6 @@ body::-webkit-scrollbar {
 body {
     margin: 0;
     background-color: var(--base-color);
-    font-family: 'Times New Roman', Times, serif;
 }
 
 div#wrapper {
@@ -105,9 +107,10 @@ a {
     color: var(--accent-color);
 }
 
-a.page-link,
+h1,
 h2 {
     font-size: 400%;
+    margin: 0;
 }
 
 h3 {
@@ -120,12 +123,27 @@ figcaption {
 }
 
 p,
+h1,
 h3,
 h2,
 figcaption {
     color: var(--text-color);
 }
 
-h2 {
-    margin: 0;
+h1,
+h2,
+h3 {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+}
+
+p,
+figcaption {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
