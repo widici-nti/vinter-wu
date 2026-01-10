@@ -14,7 +14,9 @@ class AdUnit extends HTMLElement {
             <div class="ad-title">
                 <h2>Advertisement</h2>
             </div>
-            <div class="ad-img"></div>
+            <a href="https://github.com/widici-nti/vinter-wu">
+                <div class="ad-img"></div>
+            </a>
         `;
 
         const path = AD_PATHS[Math.floor(Math.random() * AD_PATHS.length)];

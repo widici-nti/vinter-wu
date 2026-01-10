@@ -88,7 +88,7 @@ ad-unit div.ad-title {
     align-items: center;
 }
 
-ad-unit div.ad-img {
+ad-unit a div.ad-img {
     height: 100%;
     background-image: var(--ad-img);
     background-size: contain;
