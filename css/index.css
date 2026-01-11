@@ -10,12 +10,18 @@ main {
 section#dishes {
     grid-area: sc;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     margin: var(--default-margin);
 }
 
-section#dishes article {
+section#dish-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section#dish-cards article {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +34,7 @@ section#dishes article {
     background-color: var(--mantle-color);
 }
 
-section#dishes article h3 {
+section#dish-cards article h3 {
     text-align: center;
     margin: var(--default-margin);
 }
@@ -51,6 +57,20 @@ section.dish-stats {
     align-items: center;
     width: 100%;
     height: 20%;
+    border-radius: var(--default-radius);
+    background-color: var(--accent-color);
+}
+
+section#dishes a {
+    width: 100%;
+}
+
+article#new-recipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
     border-radius: var(--default-radius);
     background-color: var(--accent-color);
 }
