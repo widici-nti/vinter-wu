@@ -51,7 +51,7 @@ div.dish-img img {
     object-fit: cover;
 }
 
-section.dish-stats {
+div.dish-stats {
     display: flex;
     justify-content: space-around;
     align-items: center;
